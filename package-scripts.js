@@ -12,7 +12,7 @@ module.exports = {
          */
         start: {
             script: 'cross-env NODE_ENV=production node dist/app.js',
-            description: 'Starts the built app from the dist directory'
+            description: 'Starts the compiled app from the dist directory'
         },
         /**
          * Serves the current app and watches for changes to restart it
@@ -244,15 +244,15 @@ module.exports = {
          * This creates pretty banner to the terminal
          */
         banner: {
-            build: banner('build'),
-            serve: banner('serve'),
-            testUnit: banner('test.unit'),
-            testIntegration: banner('test.integration'),
-            testE2E: banner('test.e2e'),
-            migrate: banner('migrate'),
-            seed: banner('seed'),
-            revert: banner('revert'),
-            clean: banner('clean')
+            build: banner('HipHire-Build'),
+            serve: banner('HipHire-Serve'),
+            testUnit: banner('HipHire-UnitTest'),
+            testIntegration: banner('HipHire-IntegrationTest'),
+            testE2E: banner('HipHire-Test-End-To-End'),
+            migrate: banner('HipHire-Migrate'),
+            seed: banner('HipHire-Seed'),
+            revert: banner('HipHire-Revert-Migration'),
+            clean: banner('HipHire-Clean')
         }
     }
 };
