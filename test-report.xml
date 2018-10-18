@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testExecutions version="1">
+  <file path="/Users/corey/Projects/HipHire/follow_customer_api/test/unit/middlewares/ErrorHandlerMiddleware.test.ts">
+    <testCase name="ErrorHandlerMiddleware Should not print stack out in production" duration="27"/>
+    <testCase name="ErrorHandlerMiddleware Should print stack out in development" duration="3"/>
+  </file>
+  <file path="/Users/corey/Projects/HipHire/follow_customer_api/test/unit/validations/UserValidations.test.ts">
+    <testCase name="UserValidations User should always have a first name" duration="127"/>
+    <testCase name="UserValidations User should always have a last name" duration="1"/>
+    <testCase name="UserValidations User should always have a email" duration="1"/>
+    <testCase name="UserValidations User validation should succeed with all required fields" duration="2"/>
+  </file>
+  <file path="/Users/corey/Projects/HipHire/follow_customer_api/test/unit/services/UserService.test.ts">
+    <testCase name="UserService Find should return a list of users" duration="6"/>
+    <testCase name="UserService Create should dispatch subscribers" duration="3"/>
+  </file>
+  <file path="/Users/corey/Projects/HipHire/follow_customer_api/test/unit/auth/AuthService.test.ts">
+    <testCase name="AuthService parseTokenFromRequest Should return the credentials of the basic authorization header" duration="9"/>
+    <testCase name="AuthService parseTokenFromRequest Should return undefined if there is no basic authorization header" duration="3"/>
+    <testCase name="AuthService parseTokenFromRequest Should return undefined if there is a invalid basic authorization header" duration="1"/>
+  </file>
+  <file path="/Users/corey/Projects/HipHire/follow_customer_api/test/integration/PetService.test.ts">
+    <testCase name="PetService should create a new pet in the database" duration="66"/>
+  </file>
+  <file path="/Users/corey/Projects/HipHire/follow_customer_api/test/e2e/api/info.test.ts">
+    <testCase name="/api GET: / should return the api-version" duration="50"/>
+  </file>
+  <file path="/Users/corey/Projects/HipHire/follow_customer_api/test/e2e/api/users.test.ts">
+    <testCase name="/api/users GET: / should return a list of users" duration="135"/>
+    <testCase name="/api/users GET: /:id should return bruce" duration="88"/>
+  </file>
+</testExecutions>

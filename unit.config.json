@@ -1,0 +1,24 @@
+{
+  "moduleFileExtensions": ["js", "jsx", "json", "ts", "tsx"],
+  "testResultsProcessor": "jest-sonar-reporter",
+  "transform": {
+    "^.+\\.(ts|tsx)$": "ts-jest"
+  },
+  "testMatch": ["**/test/**/*.test.(ts)"],
+  "testEnvironment": "node",
+  "collectCoverage": true,
+  "coverageReporters": ["lcov"],
+  "coverageDirectory": "coverage",
+  "collectCoverageFrom": [
+      "**/src/api/**/*.{ts}",
+      "!**/src/api/mutations/**/*.{ts}",
+      "!**/src/api/queries/**/*.{ts}",
+      "!**/src/api/types/**/*.{ts}",
+      "!**/src/database/factories/**/*.{ts}",
+      "!**/src/lib/**/*.{ts}",
+      "!**/src/database/seeds/**/*.{ts}",
+      "!**/src/loaders/**/*.{ts}",
+      "!**/node_modules/**",
+      "!**/build/**"
+  ]
+}
